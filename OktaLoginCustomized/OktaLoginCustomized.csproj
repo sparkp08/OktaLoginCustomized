@@ -1,0 +1,901 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\Shared\header\_Branding.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\header\_Mobile.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\header\_Navigation.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\header\_SettingsBar.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\header\_UtilityHeader.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\modules\ask-bar.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\modules\branding.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\modules\global-footer.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\modules\google-cse.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\modules\header-single-banner.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\modules\location-bar.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\modules\mobile-controls.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\modules\navigation.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\modules\scripts.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\modules\search-results-standalone.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\modules\search-results.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\modules\search.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\modules\section-data-visualizations.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\modules\section-footer2.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\modules\section-green-buildings.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\modules\section-green-stats.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\modules\section-mobile-gallery.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\modules\section-open-data.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\modules\section-related-links.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\modules\section-service-advertisement.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\modules\section-service-faq.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\modules\section-service-group.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\modules\serp.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\modules\service-card.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\modules\service-directory.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\modules\service-profile.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\modules\service-tiles-empty.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\modules\settings-bar.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\modules\utility-header.cshtml" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\cagov.core.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\cagov.core.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\circles.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\search.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\site (2).js" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\configs\bar.csv" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\configs\bar.json" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\configs\line.csv" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\configs\line.json" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\configs\pie.csv" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\configs\pie.json" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\01.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\02.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\03.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\150x100.gif" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\150x150.gif" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\150x150Map.gif" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\150x200.gif" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\500x450.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\70x70.gif" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\70x93.gif" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\734x300.gif" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\75x75.gif" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\ad-apps.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\ad-survey.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\ad-ui-online.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\background.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\background_1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\background_2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\background_3.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\background_4.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\background_5.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\background_6.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\charts\bar_chart_fallback.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\charts\half_donut_fallback.PNG" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\charts\home_page_fallback.PNG" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\charts\line_chart_fallback.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\charts\pie_chart_fallback.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\charts\_notes\dwsync.xml" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\dw-optionalslideshow.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\example.gif" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\FogHorns-1920.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\Foghorns-min-more.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\Foghorns-min.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\Foghorns.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\gallery\logo-32.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\gallery\orangecounty-big.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\gallery\orangecounty-square.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\gallery\orangecounty-thumb.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\gallery\pasorobles-big.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\gallery\pasorobles-square.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\gallery\pasorobles-thumb.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\gallery\santabarbara-big.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\gallery\santabarbara-square.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\gallery\santabarbara-thumb.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\gallery\sierra-big.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\gallery\sierra-square.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\gallery\sierra-thumb.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\gallery\_notes\dwsync.xml" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\GoldenGate-min-more.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\GoldenGate-min.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\GoldenGate.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\home\connect_email.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\home\connect_facebook.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\home\connect_flickr.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\home\connect_flipboard.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\home\connect_mobile.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\home\connect_pinterest.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\home\connect_podcast.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\home\connect_qrcode.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\home\connect_rss.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\home\connect_survey.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\home\connect_twitter.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\home\connect_youtube.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\home\_notes\dwsync.xml" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\logo-cal-fire.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\logo-cal-vet.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\logo-calhr.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\logo-dmv.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\logo-edd.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\logo-EDD.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\logo-PARKS.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\logo-scif.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\mobile-gallery-app.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\mobile-header-icons-area.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\mobile-menu-icons-area.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\placeholder\1280x720.gif" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\placeholder\207x136.gif" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\placeholder\800x600.gif" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\placeholder\_notes\dwsync.xml" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\primary-banner.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\sample-map-830x400.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\sample-map.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\sample-nav-image.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\sample-nav-image2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\service-drive.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\service-find-job.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\service-tiles\driving-test.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\service-tiles\redwoods.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\service-tiles\service-file-unemployment.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\service-tiles\service-find-job.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\service-tiles\service-paid-family-leave.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\service-tiles\service-register-vehicle.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\service-tiles\student-driver.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\service-tiles\_notes\dwsync.xml" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\student-driver.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\Thumbs.db" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\working.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\images\_notes\dwsync.xml" />
+    <_ContentIncludedByDefault Remove="wwwroot\sample\_notes\dwsync.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Views\Shared\Error.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Views\Shared\_footer.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Views\Shared\_head.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Views\Shared\_header.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Views\Shared\_Layout.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Views\Shared\_ValidationScriptsPartial.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\cagov.core.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\cagov.core.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\cagov.font-only.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\cagov.font-only.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\colorscheme-eureka.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\colorscheme-eureka.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\colorscheme-mono.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\colorscheme-mono.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\colorscheme-oceanside.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\colorscheme-oceanside.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\colorscheme-orangecounty.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\colorscheme-orangecounty.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\colorscheme-pasorobles.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\colorscheme-pasorobles.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\colorscheme-sacramento.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\colorscheme-sacramento.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\colorscheme-santabarbara.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\colorscheme-santabarbara.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\colorscheme-sierra.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\colorscheme-sierra.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\colorscheme-trinity.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\colorscheme-trinity.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\custom.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\site %282%29.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\site.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\style.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\style.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\favicon.ico">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\fonts\Alata-Regular.ttf">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\fonts\CaGov.eot">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\fonts\CaGov.svg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\fonts\CaGov.ttf">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\fonts\CaGov.woff">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\fonts\glyphicons-halflings-regular.eot">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\fonts\glyphicons-halflings-regular.svg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\fonts\glyphicons-halflings-regular.ttf">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\fonts\glyphicons-halflings-regular.woff">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\fonts\selection.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\images\apple-touch-icon-114x114.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\images\apple-touch-icon-120x120.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\images\apple-touch-icon-144x144.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\images\apple-touch-icon-152x152.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\images\apple-touch-icon-180x180.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\images\apple-touch-icon-192x192.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\images\apple-touch-icon-57x57.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\images\apple-touch-icon-72x72.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\images\apple-touch-icon-precomposed.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\images\apple-touch-icon.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\images\background-primary-neutral.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\images\background.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\images\banner\banner-blank.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\images\banner\banner-gal.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\images\banner\banner-guy.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\images\banner\Thumbs.db">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Ca-Gov-Logo-Blue.svg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Ca-Gov-Logo-Gold.svg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Ca-Gov-Logo-White.svg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\images\ca-logo.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\images\fancybox\blank.gif">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\images\fancybox\fancybox_loading%402x.gif">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\images\fancybox\fancybox_loading.gif">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\images\fancybox\fancybox_overlay.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\images\fancybox\fancybox_sprite%402x.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\images\fancybox\fancybox_sprite.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\images\fancybox\Thumbs.db">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\images\NET-core-logo.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\images\structure.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\images\template-logo.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Thumbs.db">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\js\site.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\js\bootstrap.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\js\bootstrap.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\LICENSE">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\d3.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\html5shiv.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\icon-fonts-ie7.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery-migrate.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery-validation\dist\additional-methods.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery-validation\dist\additional-methods.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery-validation\dist\jquery.validate.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery-validation\dist\jquery.validate.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery-validation\LICENSE.md">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery\dist\jquery.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery\dist\jquery.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery\dist\jquery.min.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery\LICENSE.txt">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\Plotly.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\respond.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\selectivizr-min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\typedarray.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Shared\modules\ask-bar.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\modules\ask-bar.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Shared\modules\branding.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\modules\branding.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Shared\modules\global-footer.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\modules\global-footer.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Shared\modules\google-cse.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\modules\google-cse.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Shared\modules\header-single-banner.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\modules\header-single-banner.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Shared\modules\location-bar.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\modules\location-bar.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Shared\modules\mobile-controls.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\modules\mobile-controls.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Shared\modules\navigation.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\modules\navigation.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Shared\modules\scripts.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\modules\scripts.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Shared\modules\search.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\modules\search.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Shared\modules\search-results.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\modules\search-results.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Shared\modules\search-results-standalone.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\modules\search-results-standalone.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Shared\modules\section-data-visualizations.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\modules\section-data-visualizations.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Shared\modules\section-footer2.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\modules\section-footer2.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Shared\modules\section-green-buildings.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\modules\section-green-buildings.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Shared\modules\section-green-stats.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\modules\section-green-stats.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Shared\modules\section-mobile-gallery.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\modules\section-mobile-gallery.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Shared\modules\section-open-data.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\modules\section-open-data.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Shared\modules\section-related-links.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\modules\section-related-links.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Shared\modules\section-service-advertisement.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\modules\section-service-advertisement.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Shared\modules\section-service-faq.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\modules\section-service-faq.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Shared\modules\section-service-group.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\modules\section-service-group.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Shared\modules\serp.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\modules\serp.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Shared\modules\service-card.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\modules\service-card.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Shared\modules\service-directory.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\modules\service-directory.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Shared\modules\service-profile.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\modules\service-profile.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Shared\modules\service-tiles-empty.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\modules\service-tiles-empty.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Shared\modules\settings-bar.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\modules\settings-bar.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Shared\modules\utility-header.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\modules\utility-header.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Shared\header\_Branding.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\header\_Branding.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Shared\header\_Mobile.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\header\_Mobile.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Shared\header\_Navigation.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\header\_Navigation.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Shared\header\_SettingsBar.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\header\_SettingsBar.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Shared\header\_UtilityHeader.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\header\_UtilityHeader.cshtml" />
+  </ItemGroup>
+
+</Project>

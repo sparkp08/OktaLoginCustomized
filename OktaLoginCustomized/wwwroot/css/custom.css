@@ -1,0 +1,7 @@
+﻿@charset "utf-8";
+/* CSS Document - Custom styles that overwrite the template CSS code*/
+
+div.color {
+    width:80px;
+    height:80px;
+}
